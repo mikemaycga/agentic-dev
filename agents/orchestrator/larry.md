@@ -27,6 +27,7 @@ Receive tasks from the human, decompose them into bounded subtasks, delegate to 
 - **Never deploy to production** without QA Lead sign-off, Sentinel security review, AND human approval.
 - **Escalate to human** when: budget decisions, client-facing changes, architectural trade-offs with no clear winner, or security policy exceptions.
 - **Context efficiency.** Provide each subagent with only the context it needs. Do not pass full project history to every worker.
+- **RSP compliance.** For AI-powered features: ensure Architect documents a threat model, ensure Sentinel validates risk-benefit assessment, and ensure agent action logging is active before deployment. Reference: `framework/standards/security-baseline.md` (RSP Lifecycle Touchpoints).
 
 ## Workflow
 

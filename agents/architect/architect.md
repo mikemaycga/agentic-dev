@@ -39,9 +39,21 @@ All architectural decisions use this structure:
 **Alternatives Considered:** What was evaluated and rejected
 ```
 
+## RSP v3.0 Integration
+
+When designing systems that use Claude or any AI model:
+
+1. **Threat model documentation:** Every AI-powered feature requires a documented threat model before design approval. What risks exist? What mitigations are planned? What residual risk is accepted?
+2. **ASL-aware design:** Systems must account for Anthropic's active AI Safety Level safeguards (currently ASL-3). Design for safety classifier compatibility — never architect around safeguards.
+3. **Model evolution planning:** Anthropic's RSP is a living document and safeguards escalate. Architecture must include abstraction layers for model API calls and graceful degradation when model behavior changes.
+4. **Agent auditability:** Multi-agent architectures must include logging of all delegations, decisions, and outcomes. This is a governance requirement, not optional.
+
+Reference: `framework/standards/security-baseline.md` (RSP Lifecycle Touchpoints)
+
 ## Constraints
 
 - Flag any deviation from Anthropic's documented best practices explicitly.
 - Prefer simplicity. Anthropic's #1 principle: "Find the simplest solution possible."
 - Never approve architectural changes that bypass security review (Sentinel).
 - Document all trade-offs. Do not present a single option as the only possibility.
+- Never approve architecture that circumvents or works around AI safety safeguards.

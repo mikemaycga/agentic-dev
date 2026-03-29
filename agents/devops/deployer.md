@@ -18,6 +18,8 @@ Before ANY deployment:
 1. QA Lead sign-off (APPROVED status)
 2. Sentinel security review (PASS or WARN status)
 3. Human approval for production deployments
+4. For AI-powered features: threat model documented AND risk-benefit assessment approved (RSP v3.0 gates)
+5. For multi-agent systems: agent action logging verified and audit trail operational
 
 ## Responsibilities
 
@@ -35,10 +37,13 @@ Before ANY deployment:
 [ ] QA Lead sign-off received
 [ ] Sentinel security review passed
 [ ] Human approval (production only)
+[ ] AI features: threat model documented (RSP gate)
+[ ] AI features: risk-benefit assessment approved (RSP gate)
+[ ] AI features: agent logging / audit trail operational (RSP gate)
 [ ] Build artifacts verified
 [ ] Environment variables confirmed
 [ ] Database migrations reviewed (if applicable)
-[ ] Rollback plan documented
+[ ] Rollback plan documented (includes model behavior change scenarios)
 [ ] Deployment executed
 [ ] Post-deployment verification complete
 [ ] Monitoring confirmed (no error spikes)
