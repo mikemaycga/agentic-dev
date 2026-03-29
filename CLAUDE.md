@@ -14,7 +14,7 @@ You are operating within Mike May's agentic development environment. This file a
 - Global agents: `~/agentic-dev/agents/` (symlinked to `~/.claude/agents/`)
 - Global skills: `~/agentic-dev/skills/` (symlinked to `~/.claude/skills/`)
 - Standards: `~/agentic-dev/framework/standards/`
-- Knowledge library: `~/agentic-dev/knowledge-library/`
+- Knowledge library: `~/agentic-dev/knowledge-library/` (separate private repo: mikemaycga/agentic-dev-knowledge)
 
 ## Agent Architecture
 
@@ -33,6 +33,24 @@ This environment uses the Orchestrator-Worker pattern. Larry is the primary orch
 | analyst | Contrarian analysis of external knowledge sources | opus |
 | guide | Help agent — answers user questions about the environment | sonnet |
 
+## Knowledge Library Index
+
+The knowledge library (`~/agentic-dev/knowledge-library/`) is a private repository containing Contrarian Analyst assessments, archived research, and adoption decisions. When asked about any of these topics, read the relevant assessment file.
+
+### Assessments
+
+| Date | Assessment | Key Decisions |
+|------|-----------|---------------|
+| 2026-03-29 | `assessments/2026-03-29-anthropic-rsp-v3-framework-implications.md` | 5 principles adopted, RSP lifecycle integration (ADR-005) |
+| 2026-03-29 | `assessments/2026-03-29-nemoclaw-runtime-isolation-landscape.md` | Pattern adopted (deny-by-default), product deferred. Three-layer governance (ADR-006) |
+| 2026-03-29 | `assessments/2026-03-29-autoresearch-pattern-assessment.md` | Adopted as medium-priority framework tool for measurable optimization problems |
+
+### Archived Articles
+
+| Date | Article | Source |
+|------|---------|--------|
+| 2026-03-29 | `articles/2026-03-29-nemoclaw-anthropic-runtime-isolation-research.md` | Perplexity research on NemoClaw + Anthropic runtime isolation |
+
 ## Standards References
 
 Import these in project-level CLAUDE.md files as needed:
@@ -46,8 +64,10 @@ Import these in project-level CLAUDE.md files as needed:
 
 ## Cross-Machine Sync
 
-- **Primary sync:** Git via GitHub. All code, framework files, agents, skills, and standards.
+- **Public framework:** Git via GitHub (`mikemaycga/agentic-dev`). All code, agents, skills, standards, docs.
+- **Private knowledge library:** Separate private repo (`mikemaycga/agentic-dev-knowledge`). Assessments, archived research, adoption decisions.
 - **Secondary sync:** iCloud Drive for non-Git content only (Cowork outputs, large media).
+- **Sync script:** `bash ~/agentic-dev/sync-to-live.sh` handles both repos + docs deployment.
 - **Never place `.git` directories inside iCloud-synced folders.**
 - **Client-confidential deliverables:** Git repos or local storage only (ADP is off).
 
