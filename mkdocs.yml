@@ -79,12 +79,14 @@ nav:
       - ADR-004 Skill Building: architecture/decisions/ADR-004-skill-building.md
       - ADR-005 RSP Integration: architecture/decisions/ADR-005-rsp-v3-integration.md
       - ADR-006 Safe AI Governance: architecture/decisions/ADR-006-safe-ai-governance.md
+      - ADR-007 Project Complexity: architecture/decisions/ADR-007-project-complexity-classification.md
   - Governance:
     - Safe AI Governance: governance/safe-ai-governance.md
     - Security Baseline: governance/security-baseline.md
     - RSP v3.0 Alignment: governance/rsp-alignment.md
     - Security Profiles: governance/security-profiles.md
   - Standards:
+    - Project Complexity: standards/project-complexity.md
     - Code Style: standards/code-style.md
     - Testing: standards/testing.md
     - Git Workflow: standards/git-workflow.md
