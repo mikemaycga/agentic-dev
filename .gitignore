@@ -53,5 +53,8 @@ service-account*.json
 *.tar.gz
 *.dmg
 
+# Knowledge library (separate private repo: mikemaycga/agentic-dev-knowledge)
+knowledge-library/
+
 # Self-improving skills staging (reviewed before promotion)
 # Note: learnings-staging.md is tracked — it needs to be reviewed across machines
