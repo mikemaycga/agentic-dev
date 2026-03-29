@@ -1,0 +1,44 @@
+{
+  "$schema": "qa-gates-schema",
+  "version": "1.0",
+  "description": "Machine-enforceable quality thresholds for CI/CD pipelines",
+  "gates": {
+    "unit_test_coverage": {
+      "minimum_percentage": 80,
+      "blocking": true,
+      "enforced_by": "ci"
+    },
+    "integration_tests": {
+      "required": true,
+      "blocking": true,
+      "enforced_by": "ci"
+    },
+    "linting": {
+      "zero_errors": true,
+      "warnings_allowed": true,
+      "blocking": true,
+      "enforced_by": "pre-commit-hook"
+    },
+    "type_checking": {
+      "zero_errors": true,
+      "blocking": true,
+      "enforced_by": "pre-commit-hook"
+    },
+    "security_scan": {
+      "required": true,
+      "blocking_on_fail": true,
+      "warn_allowed": true,
+      "enforced_by": "sentinel-agent"
+    },
+    "build": {
+      "clean_build": true,
+      "blocking": true,
+      "enforced_by": "ci"
+    },
+    "coverage_regression": {
+      "max_drop_percentage": 2,
+      "blocking": true,
+      "enforced_by": "ci"
+    }
+  }
+}

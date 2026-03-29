@@ -1,0 +1,56 @@
+# Environment and secrets
+.env
+.env.*
+*.local
+!.env.example
+
+# Claude local overrides (machine-specific, not shared)
+CLAUDE.local.md
+.claude/settings.local.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Build outputs
+dist/
+build/
+*.o
+*.so
+
+# Credentials and keys
+*.pem
+*.key
+*.p12
+*.keystore
+credentials.json
+service-account*.json
+
+# iCloud conflicts
+*.icloud
+
+# Large binary files (use Git LFS if needed)
+*.zip
+*.tar.gz
+*.dmg
+
+# Self-improving skills staging (reviewed before promotion)
+# Note: learnings-staging.md is tracked — it needs to be reviewed across machines

@@ -1,0 +1,14 @@
+{
+  "hooks": [
+    {
+      "event": "PreCommit",
+      "command": "npx lint-staged",
+      "description": "Run linting and formatting on staged files before commit"
+    },
+    {
+      "event": "PostCommit",
+      "command": "echo 'Commit successful'",
+      "description": "Post-commit notification"
+    }
+  ]
+}
