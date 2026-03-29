@@ -13,28 +13,28 @@
       
       
       
-        <link rel="prev" href="../code-style/">
+        <link rel="prev" href="../ADR-006-safe-ai-governance/">
       
       
-        <link rel="next" href="../git-workflow/">
+        <link rel="next" href="../../../governance/safe-ai-governance/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Testing - Agentic Development Environment</title>
+        <title>ADR-007 Project Complexity - Agentic Development Environment</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#testing-standards" class="md-skip">
+        <a href="#adr-007-project-complexity-classification" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Agentic Development Environment" class="md-header__button md-logo" aria-label="Agentic Development Environment" data-md-component="logo">
+    <a href="../../.." title="Agentic Development Environment" class="md-header__button md-logo" aria-label="Agentic Development Environment" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Testing
+              ADR-007 Project Complexity
             
           </span>
         </div>
@@ -225,7 +225,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -246,7 +246,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../getting-started/overview/" class="md-tabs__link">
+        <a href="../../../getting-started/overview/" class="md-tabs__link">
           
   
   
@@ -262,11 +262,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../architecture/system-overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../system-overview/" class="md-tabs__link">
           
   
   
@@ -286,7 +288,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../governance/safe-ai-governance/" class="md-tabs__link">
+        <a href="../../../governance/safe-ai-governance/" class="md-tabs__link">
           
   
   
@@ -302,13 +304,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../project-complexity/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../standards/project-complexity/" class="md-tabs__link">
           
   
   
@@ -328,7 +328,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../agents/roster/" class="md-tabs__link">
+        <a href="../../../agents/roster/" class="md-tabs__link">
           
   
   
@@ -348,7 +348,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../skills/catalog/" class="md-tabs__link">
+        <a href="../../../skills/catalog/" class="md-tabs__link">
           
   
   
@@ -382,7 +382,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Agentic Development Environment" class="md-nav__button md-logo" aria-label="Agentic Development Environment" data-md-component="logo">
+    <a href="../../.." title="Agentic Development Environment" class="md-nav__button md-logo" aria-label="Agentic Development Environment" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -412,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -493,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/overview/" class="md-nav__link">
+      <a href="../../../getting-started/overview/" class="md-nav__link">
         
   
   
@@ -521,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/setup/" class="md-nav__link">
+      <a href="../../../getting-started/setup/" class="md-nav__link">
         
   
   
@@ -549,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/cross-machine-sync/" class="md-nav__link">
+      <a href="../../../getting-started/cross-machine-sync/" class="md-nav__link">
         
   
   
@@ -581,28 +581,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -620,7 +623,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -638,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/system-overview/" class="md-nav__link">
+      <a href="../../system-overview/" class="md-nav__link">
         
   
   
@@ -666,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/agent-architecture/" class="md-nav__link">
+      <a href="../../agent-architecture/" class="md-nav__link">
         
   
   
@@ -691,28 +694,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
             
   
   
@@ -730,7 +736,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -748,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/decisions/ADR-001-sync-strategy/" class="md-nav__link">
+      <a href="../ADR-001-sync-strategy/" class="md-nav__link">
         
   
   
@@ -776,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/decisions/ADR-002-agent-architecture/" class="md-nav__link">
+      <a href="../ADR-002-agent-architecture/" class="md-nav__link">
         
   
   
@@ -804,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/decisions/ADR-003-document-formats/" class="md-nav__link">
+      <a href="../ADR-003-document-formats/" class="md-nav__link">
         
   
   
@@ -832,7 +838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/decisions/ADR-004-skill-building/" class="md-nav__link">
+      <a href="../ADR-004-skill-building/" class="md-nav__link">
         
   
   
@@ -860,7 +866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/decisions/ADR-005-rsp-v3-integration/" class="md-nav__link">
+      <a href="../ADR-005-rsp-v3-integration/" class="md-nav__link">
         
   
   
@@ -888,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../architecture/decisions/ADR-006-safe-ai-governance/" class="md-nav__link">
+      <a href="../ADR-006-safe-ai-governance/" class="md-nav__link">
         
   
   
@@ -913,10 +919,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../architecture/decisions/ADR-007-project-complexity-classification/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-007 Project Complexity
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -932,6 +965,142 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classification-criteria-4-8-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classification Criteria (4-8 factors)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technology-stack-by-tier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technology Stack by Tier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execution-strategy-by-tier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Execution Strategy by Tier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#governance-by-tier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Governance by Tier
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consequences
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternatives-considered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternatives Considered
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1013,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/safe-ai-governance/" class="md-nav__link">
+      <a href="../../../governance/safe-ai-governance/" class="md-nav__link">
         
   
   
@@ -1041,7 +1210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/security-baseline/" class="md-nav__link">
+      <a href="../../../governance/security-baseline/" class="md-nav__link">
         
   
   
@@ -1069,7 +1238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/rsp-alignment/" class="md-nav__link">
+      <a href="../../../governance/rsp-alignment/" class="md-nav__link">
         
   
   
@@ -1097,7 +1266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/security-profiles/" class="md-nav__link">
+      <a href="../../../governance/security-profiles/" class="md-nav__link">
         
   
   
@@ -1129,31 +1298,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1171,7 +1337,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1189,7 +1355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../project-complexity/" class="md-nav__link">
+      <a href="../../../standards/project-complexity/" class="md-nav__link">
         
   
   
@@ -1217,7 +1383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code-style/" class="md-nav__link">
+      <a href="../../../standards/code-style/" class="md-nav__link">
         
   
   
@@ -1242,37 +1408,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Testing
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../standards/testing/" class="md-nav__link">
         
   
   
@@ -1288,70 +1427,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#coverage-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Coverage Requirements
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing-principles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Testing Principles
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#test-naming-convention" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Test Naming Convention
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quality-gates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quality Gates
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1364,7 +1439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git-workflow/" class="md-nav__link">
+      <a href="../../../standards/git-workflow/" class="md-nav__link">
         
   
   
@@ -1392,7 +1467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documentation/" class="md-nav__link">
+      <a href="../../../standards/documentation/" class="md-nav__link">
         
   
   
@@ -1420,7 +1495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../skill-building/" class="md-nav__link">
+      <a href="../../../standards/skill-building/" class="md-nav__link">
         
   
   
@@ -1509,7 +1584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agents/roster/" class="md-nav__link">
+      <a href="../../../agents/roster/" class="md-nav__link">
         
   
   
@@ -1537,7 +1612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agents/larry/" class="md-nav__link">
+      <a href="../../../agents/larry/" class="md-nav__link">
         
   
   
@@ -1565,7 +1640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agents/architect/" class="md-nav__link">
+      <a href="../../../agents/architect/" class="md-nav__link">
         
   
   
@@ -1593,7 +1668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agents/sentinel/" class="md-nav__link">
+      <a href="../../../agents/sentinel/" class="md-nav__link">
         
   
   
@@ -1621,7 +1696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agents/specialists/" class="md-nav__link">
+      <a href="../../../agents/specialists/" class="md-nav__link">
         
   
   
@@ -1710,7 +1785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../skills/catalog/" class="md-nav__link">
+      <a href="../../../skills/catalog/" class="md-nav__link">
         
   
   
@@ -1738,7 +1813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../skills/self-improving/" class="md-nav__link">
+      <a href="../../../skills/self-improving/" class="md-nav__link">
         
   
   
@@ -1793,10 +1868,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#coverage-requirements" class="md-nav__link">
+  <a href="#context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Coverage Requirements
+        Context
       
     </span>
   </a>
@@ -1804,10 +1879,82 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#testing-principles" class="md-nav__link">
+  <a href="#decision" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Testing Principles
+        Decision
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classification-criteria-4-8-factors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classification Criteria (4-8 factors)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technology-stack-by-tier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technology Stack by Tier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execution-strategy-by-tier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Execution Strategy by Tier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#governance-by-tier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Governance by Tier
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consequences
       
     </span>
   </a>
@@ -1815,10 +1962,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#test-naming-convention" class="md-nav__link">
+  <a href="#alternatives-considered" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Test Naming Convention
+        Alternatives Considered
       
     </span>
   </a>
@@ -1826,10 +1973,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quality-gates" class="md-nav__link">
+  <a href="#sources" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quality Gates
+        Sources
       
     </span>
   </a>
@@ -1856,82 +2003,299 @@
   
 
 
-<h1 id="testing-standards">Testing Standards<a class="headerlink" href="#testing-standards" title="Permanent link">&para;</a></h1>
-<p><strong>Version:</strong> 1.0 | <strong>Status:</strong> Active Standard</p>
-<h2 id="coverage-requirements">Coverage Requirements<a class="headerlink" href="#coverage-requirements" title="Permanent link">&para;</a></h2>
+<h1 id="adr-007-project-complexity-classification">ADR-007: Project Complexity Classification<a class="headerlink" href="#adr-007-project-complexity-classification" title="Permanent link">&para;</a></h1>
+<p><strong>Status:</strong> Accepted
+<strong>Date:</strong> 2026-03-29</p>
+<h2 id="context">Context<a class="headerlink" href="#context" title="Permanent link">&para;</a></h2>
+<p>The framework supports projects ranging from single-file utilities to enterprise multi-service applications. Without a decision framework, every project risks over-engineering (full orchestrator-worker pipeline for a 200-line script) or under-engineering (no governance on a production AI agent). The framework also now includes multiple execution strategies (direct coding, RALPH loop, Spec-Driven Development, AutoResearch) and deployment targets (local Mac, cloud, hybrid) that must be matched to project characteristics.</p>
+<p>Industry practice (PMI complexity classification, decision matrices) recommends 4-8 evaluation criteria producing 3-5 tiers. Our framework needs to map complexity tiers to specific technology stacks, execution strategies, governance levels, and deployment patterns.</p>
+<h2 id="decision">Decision<a class="headerlink" href="#decision" title="Permanent link">&para;</a></h2>
+<p>Adopt a four-tier project complexity classification that determines the technology stack, development methodology, data strategy, deployment target, and governance level for every project.</p>
+<h3 id="tiers">Tiers<a class="headerlink" href="#tiers" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>Level</th>
-<th>Minimum Coverage</th>
-<th>Notes</th>
+<th>Tier</th>
+<th>Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Unit Tests</td>
-<td>80% line coverage</td>
-<td>Required for all new code</td>
+<td>1</td>
+<td><strong>Utility</strong></td>
+<td>Single-purpose scripts, automations, CLI tools, quick prototypes</td>
 </tr>
 <tr>
-<td>Integration Tests</td>
-<td>Critical paths covered</td>
-<td>API endpoints, database operations, external service calls</td>
+<td>2</td>
+<td><strong>Application</strong></td>
+<td>Single-user or small-team apps with persistent data, deployed to one platform</td>
 </tr>
 <tr>
-<td>E2E Tests</td>
-<td>Happy path + top 3 error paths</td>
-<td>Where applicable</td>
+<td>3</td>
+<td><strong>Service</strong></td>
+<td>Multi-user applications with APIs, authentication, cloud deployment</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Platform</strong></td>
+<td>Multi-service systems with AI agents, compliance requirements, enterprise clients</td>
 </tr>
 </tbody>
 </table>
-<h2 id="testing-principles">Testing Principles<a class="headerlink" href="#testing-principles" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Tests prove behavior, not implementation.</strong> Test what the code does, not how it does it.</li>
-<li><strong>Every bug fix includes a regression test.</strong> No exceptions.</li>
-<li><strong>Tests are documentation.</strong> Name tests to describe the behavior they verify.</li>
-<li><strong>Fast feedback.</strong> Unit tests must run in under 30 seconds for the full suite.</li>
-</ol>
-<h2 id="test-naming-convention">Test Naming Convention<a class="headerlink" href="#test-naming-convention" title="Permanent link">&para;</a></h2>
-<p>Format: <code>[unit under test]_[scenario]_[expected result]</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>calculateTotal_withEmptyCart_returnsZero
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>validateEmail_withMissingDomain_throwsValidationError
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>deployAgent_withoutSentinelApproval_blocksDeployment
-</code></pre></div>
-<h2 id="quality-gates">Quality Gates<a class="headerlink" href="#quality-gates" title="Permanent link">&para;</a></h2>
-<p><a href="../../agents/roster/">QA Lead</a> enforces these gates before deployment approval:</p>
+<h3 id="classification-criteria-4-8-factors">Classification Criteria (4-8 factors)<a class="headerlink" href="#classification-criteria-4-8-factors" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>Gate</th>
-<th>Threshold</th>
-<th>Blocking</th>
+<th>Factor</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+<th>Tier 3</th>
+<th>Tier 4</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>All tests pass</td>
-<td>100%</td>
-<td>Yes</td>
+<td><strong>Users</strong></td>
+<td>1 (developer)</td>
+<td>1-10</td>
+<td>10-1000+</td>
+<td>1000+ or enterprise</td>
 </tr>
 <tr>
-<td>Coverage drop</td>
-<td>No more than 2% from baseline</td>
-<td>Yes</td>
+<td><strong>Data persistence</strong></td>
+<td>None or flat file</td>
+<td>JSON/SQLite</td>
+<td>PostgreSQL/Supabase</td>
+<td>PostgreSQL + caching + search</td>
 </tr>
 <tr>
-<td>Skipped tests</td>
-<td>None without documented justification</td>
-<td>Yes</td>
+<td><strong>Deployment target</strong></td>
+<td>Local Mac only</td>
+<td>Single Mac app or single cloud service</td>
+<td>Cloud (Vercel/similar) + database</td>
+<td>Multi-service cloud + CDN + monitoring</td>
 </tr>
 <tr>
-<td>Security tests</td>
-<td>Verified by Sentinel</td>
-<td>Yes</td>
+<td><strong>Authentication</strong></td>
+<td>None</td>
+<td>Apple Keychain / local</td>
+<td>OAuth 2.0 / Supabase Auth</td>
+<td>SSO / RBAC / MFA</td>
+</tr>
+<tr>
+<td><strong>AI components</strong></td>
+<td>None or single prompt</td>
+<td>Single model integration</td>
+<td>Multi-model or agent-based</td>
+<td>Multi-agent with governance (Larry + specialists)</td>
+</tr>
+<tr>
+<td><strong>Compliance requirements</strong></td>
+<td>None</td>
+<td>Professional Standard profile</td>
+<td>Enterprise SOC 2 profile</td>
+<td>Maximum (Zero Trust) profile</td>
+</tr>
+<tr>
+<td><strong>Team size</strong></td>
+<td>Solo</td>
+<td>Solo or pair</td>
+<td>2-5</td>
+<td>5+ or cross-functional</td>
+</tr>
+<tr>
+<td><strong>Expected lifespan</strong></td>
+<td>Days to weeks</td>
+<td>Months</td>
+<td>1-3 years</td>
+<td>3+ years or ongoing</td>
 </tr>
 </tbody>
 </table>
-<p>These thresholds are also defined in machine-enforceable format in <code>framework/standards/qa-gates.json</code>.</p>
+<h3 id="technology-stack-by-tier">Technology Stack by Tier<a class="headerlink" href="#technology-stack-by-tier" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+<th>Tier 3</th>
+<th>Tier 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Language</strong></td>
+<td>TypeScript/Python (whichever is faster for the task)</td>
+<td>TypeScript or Swift</td>
+<td>TypeScript (full-stack) or Swift + API</td>
+<td>TypeScript + Swift + Python as needed</td>
+</tr>
+<tr>
+<td><strong>Framework</strong></td>
+<td>None (vanilla) or minimal</td>
+<td>Next.js or SwiftUI</td>
+<td>Next.js + API routes or Vapor</td>
+<td>Next.js + separate API + microservices</td>
+</tr>
+<tr>
+<td><strong>Data</strong></td>
+<td>JSON files or in-memory</td>
+<td>SQLite (Mac) or JSON (web)</td>
+<td>PostgreSQL / Supabase</td>
+<td>PostgreSQL + Redis + search index</td>
+</tr>
+<tr>
+<td><strong>Frontend</strong></td>
+<td>HTML/CSS or terminal</td>
+<td>React/SwiftUI</td>
+<td>React + Tailwind</td>
+<td>React + design system</td>
+</tr>
+<tr>
+<td><strong>API</strong></td>
+<td>None</td>
+<td>Internal only</td>
+<td>REST or GraphQL (OpenAPI documented)</td>
+<td>REST + GraphQL + WebSocket (OpenAPI required)</td>
+</tr>
+<tr>
+<td><strong>Hosting</strong></td>
+<td>Local filesystem</td>
+<td>Local Mac app or single Vercel deploy</td>
+<td>Vercel + Supabase</td>
+<td>Cloud provider + managed services</td>
+</tr>
+</tbody>
+</table>
+<h3 id="execution-strategy-by-tier">Execution Strategy by Tier<a class="headerlink" href="#execution-strategy-by-tier" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Strategy</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+<th>Tier 3</th>
+<th>Tier 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Direct coding</strong> (human + single agent)</td>
+<td>Primary</td>
+<td>Primary for simple features</td>
+<td>For isolated tasks</td>
+<td>For hotfixes only</td>
+</tr>
+<tr>
+<td><strong>RALPH loop</strong> (persistent-progress loop)</td>
+<td>For iteration on single files</td>
+<td>For feature implementation</td>
+<td>For PRD-driven feature sets</td>
+<td>For bounded subsystems</td>
+</tr>
+<tr>
+<td><strong>Spec-Driven Development</strong></td>
+<td>Not needed</td>
+<td>Optional</td>
+<td>Recommended</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><strong>AutoResearch</strong></td>
+<td>Not applicable</td>
+<td>For prompt/config optimization</td>
+<td>For performance tuning</td>
+<td>For systematic optimization</td>
+</tr>
+<tr>
+<td><strong>NemoClaw</strong></td>
+<td>Not applicable</td>
+<td>Not applicable</td>
+<td>Evaluation candidate (Nvidia clients)</td>
+<td>Evaluation candidate (enterprise)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="governance-by-tier">Governance by Tier<a class="headerlink" href="#governance-by-tier" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Governance</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+<th>Tier 3</th>
+<th>Tier 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Security profile</strong></td>
+<td>Professional Standard</td>
+<td>Professional Standard</td>
+<td>Enterprise SOC 2 (if client)</td>
+<td>Per client requirement</td>
+</tr>
+<tr>
+<td><strong>Agent architecture</strong></td>
+<td>Single agent</td>
+<td>Single agent or Larry + 1-2 specialists</td>
+<td>Larry + specialists</td>
+<td>Full orchestrator-worker</td>
+</tr>
+<tr>
+<td><strong>Code review</strong></td>
+<td>Self-review</td>
+<td>Self-review or single reviewer</td>
+<td>PR required, 1 approval</td>
+<td>PR required, 2 approvals</td>
+</tr>
+<tr>
+<td><strong>Testing</strong></td>
+<td>Manual verification</td>
+<td>Unit tests (80% coverage)</td>
+<td>Unit + integration + E2E</td>
+<td>Full test suite + security tests</td>
+</tr>
+<tr>
+<td><strong>Documentation</strong></td>
+<td>README only</td>
+<td>README + inline docs</td>
+<td>Full docs + API docs</td>
+<td>Full docs + API docs + ADRs</td>
+</tr>
+<tr>
+<td><strong>RSP gates</strong></td>
+<td>None</td>
+<td>Threat model if AI features</td>
+<td>Full RSP lifecycle</td>
+<td>Full RSP + audit trail</td>
+</tr>
+</tbody>
+</table>
+<h2 id="consequences">Consequences<a class="headerlink" href="#consequences" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Every new project begins with a tier classification decision before any code is written</li>
+<li>The tier determines default technology choices, reducing decision fatigue</li>
+<li>Tiers can escalate (Tier 2 → 3) as requirements grow; the classification includes upgrade triggers</li>
+<li>The standard document provides the operational decision tree; this ADR captures the rationale</li>
+<li>Client advisory engagements use this framework to recommend appropriate complexity levels</li>
+</ul>
+<h2 id="alternatives-considered">Alternatives Considered<a class="headerlink" href="#alternatives-considered" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Three tiers (small/medium/large):</strong> Rejected. Too coarse — a single Mac app and a CLI script have very different needs but both land in "small."</li>
+<li><strong>Five+ tiers:</strong> Rejected. Over-classification creates decision paralysis. Four tiers map cleanly to the framework's security profiles and deployment patterns.</li>
+<li><strong>No formal classification:</strong> Rejected. Without it, every project defaults to either over- or under-engineering. The framework already has different governance levels; this formalizes when each applies.</li>
+<li><strong>Per-project ad hoc decisions:</strong> Rejected. Inconsistency across projects, no reusable patterns, higher cognitive load per decision.</li>
+</ul>
+<h2 id="sources">Sources<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h2>
+<ul>
+<li>PMI Project Complexity Classification (pmi.org/learning/library/project-complexity-determine-rigor-9874)</li>
+<li>Spec-Driven Development mapping (medium.com/@visrow)</li>
+<li>Framework security profiles (Professional Standard, Enterprise SOC 2, Maximum)</li>
+<li>RALPH/AutoResearch assessments (knowledge-library/assessments/)</li>
+</ul>
 
 
 
@@ -2009,10 +2373,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
