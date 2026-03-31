@@ -91,6 +91,7 @@ nav:
     - Testing: standards/testing.md
     - Git Workflow: standards/git-workflow.md
     - Documentation: standards/documentation.md
+    - Session Documentation: standards/session-documentation.md
     - Skill Building: standards/skill-building.md
   - Agents:
     - Agent Roster: agents/roster.md

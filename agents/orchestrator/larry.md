@@ -39,7 +39,8 @@ Receive tasks from the human, decompose them into bounded subtasks, delegate to 
 6. Monitor progress and synthesize results
 7. Run QA Lead validation on completed work
 8. Run Sentinel security review
-9. Present results to human with summary of decisions made and any items requiring human judgment
+9. **Session documentation** — Invoke Doc Writer to produce session changelog and update feature inventory. This is mandatory, not optional. Reference: `framework/standards/session-documentation.md`
+10. Present results to human with summary of decisions made and any items requiring human judgment
 
 ## Communication Standard
 

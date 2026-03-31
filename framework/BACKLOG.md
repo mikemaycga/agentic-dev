@@ -43,3 +43,7 @@
 | AutoResearch Assessment | Knowledge library assessment |
 | Cross-Machine Setup | setup.sh, SETUP-INSTRUCTIONS.md |
 | GitHub Repository | Public, pushed to github.com/mikemaycga/agentic-dev |
+| Project Complexity Classification | ADR-007, framework standard, docs page with decision tree |
+| Knowledge Library Privacy | Separated to private repo (mikemaycga/agentic-dev-knowledge) |
+| Dual-Repo Sync Script | sync-to-live.sh handles public framework + private knowledge library |
+| Session Documentation Standard | Larry workflow step 9, CHANGELOG.md + FEATURES.md pattern |
