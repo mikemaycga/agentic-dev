@@ -44,6 +44,7 @@ The knowledge library (`~/agentic-dev/knowledge-library/`) is a private reposito
 | 2026-03-29 | `assessments/2026-03-29-anthropic-rsp-v3-framework-implications.md` | 5 principles adopted, RSP lifecycle integration (ADR-005) |
 | 2026-03-29 | `assessments/2026-03-29-nemoclaw-runtime-isolation-landscape.md` | Pattern adopted (deny-by-default), product deferred. Three-layer governance (ADR-006) |
 | 2026-03-29 | `assessments/2026-03-29-autoresearch-pattern-assessment.md` | Adopted as medium-priority framework tool for measurable optimization problems |
+| 2026-04-01 | `assessments/2026-04-01-paperclip-agent-operations-assessment.md` | Watch list — do not adopt yet. Re-evaluate Q3 2026. Potential Layer 3 governance dashboard |
 
 ### Archived Articles
 
